@@ -5,15 +5,15 @@ function $$(selector, context = document) {
   return Array.from(context.querySelectorAll(selector));
 }
 
-let pages = [
-  { url: "./", title: "Home" },
-  { url: "projects", title: "Projects" },
-  { url: "cv", title: "CV" },
-  { url: "contact", title: "Contact" },
-  // add the rest of your pages here
-];
-let nav = document.createElement("nav");
-document.body.prepend(nav);
+// let pages = [
+//   { url: "./", title: "Home" },
+//   { url: "projects", title: "Projects" },
+//   { url: "cv", title: "CV" },
+//   { url: "contact", title: "Contact" },
+//   // add the rest of your pages here
+// ];
+// let nav = document.createElement("nav");
+// document.body.prepend(nav);
 document.body.insertAdjacentHTML(
   "afterbegin",
   `
@@ -27,24 +27,24 @@ document.body.insertAdjacentHTML(
 	</label>`
 );
 
-for (let p of pages) {
-  let url = p.url;
-  let title = p.title;
-  url = !ARE_WE_HOME && !url.startsWith("http") ? "../" + url : url;
+// for (let p of pages) {
+//   let url = p.url;
+//   let title = p.title;
+//   url = !ARE_WE_HOME && !url.startsWith("http") ? "../" + url : url;
 
-  // Create link and add it to nav
-  let a = document.createElement("a");
-  a.href = url;
-  a.textContent = title;
-  nav.append(a);
-  if (a.host === location.host && a.pathname === location.pathname) {
-    a.classList.add("current");
-  }
-  a.classList.toggle(
-    "current",
-    a.host === location.host && a.pathname === location.pathname
-  );
-}
+//   // Create link and add it to nav
+//   let a = document.createElement("a");
+//   a.href = url;
+//   a.textContent = title;
+//   nav.append(a);
+//   if (a.host === location.host && a.pathname === location.pathname) {
+//     a.classList.add("current");
+//   }
+//   a.classList.toggle(
+//     "current",
+//     a.host === location.host && a.pathname === location.pathname
+//   );
+// }
 
 console.log("are we home?", ARE_WE_HOME);
 
