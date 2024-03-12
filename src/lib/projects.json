@@ -1,28 +1,33 @@
 [
     {
-        "title": "My Project",
-        "image": "https://vis-society.github.io/labs/2/images/empty.svg",
-        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus facilis et optio culpa expedita ratione\n                facere aut voluptas natus? Asperiores quisquam, aliquid minima temporibus ipsum tempore eum natus\n                cupiditate sapiente."
+        "title": "Project A2",
+        "image": "https://moralesdaniela.github.io/A2_DM/images/figure7.png",
+        "year": 2024, 
+        "description": "This is an image from the the A2 Project for the course, Interactive Data Visualization"
     },
     {
-        "title": "Quibusdam assumenda nemo quam.",
-        "image": "https://vis-society.github.io/labs/2/images/empty.svg",
-        "description": "Sunt praesentium officiis magni rerum et repellat incidunt accusamus commodi laboriosam! Numquam et iste\n                atque tenetur animi at facilis. Sapiente consequuntur harum placeat a veniam doloremque ea iusto\n                mollitia magni!"
+        "title": "Project A3",
+        "image": "https://moralesdaniela.github.io/A3_DM/images/A3_Part2Final.png",
+        "year": 2024, 
+        "description": "This is an image from the the A3 Project for the course, Interactive Data Visualization"
+        },
+    {
+        "title": "Project A4",
+        "image": "https://moralesdaniela.github.io/A4_DM/images/ForProp.png",
+        "year": 2024,
+        "description": "This is an image from the A4 Project for the course, Interactive Data Visualization"
     },
     {
-        "title": "Velit culpa voluptas repellat?",
-        "image": "https://vis-society.github.io/labs/2/images/empty.svg",
-        "description": "Laborum deleniti cumque, dicta ab blanditiis necessitatibus eius nihil commodi numquam maxime amet sit\n                dolorem, veritatis recusandae error sequi quam exercitationem iste. Impedit laboriosam ipsa magnam,\n                autem consequatur iste minus!"
+        "title": "Osaka Streetscape",
+        "image": "../images/Osaka.jpg",
+        "year": 2024,
+        "description": "Photo from Osaka"
     },
     {
-        "title": "Minima culpa maxime rem.",
-        "image": "https://vis-society.github.io/labs/2/images/empty.svg",
-        "description": "Animi iusto maiores quam minus veniam impedit voluptatibus quae illo dolores voluptatum delectus\n                laudantium labore temporibus inventore beatae aliquid, et odio aspernatur repudiandae voluptate debitis\n                eligendi maxime consequuntur. Quam, voluptatibus!"
-    },
-    {
-        "title": "Vitae quis cum quae?",
-        "image": "https://vis-society.github.io/labs/2/images/empty.svg",
-        "description": "Ullam ex iste accusantium! Facere sapiente nesciunt earum perferendis quis nisi est, iure, consequatur\n                ipsa, blanditiis commodi eaque mollitia laudantium ut tenetur! Ab, iusto fugit quae corporis pariatur\n                possimus minima."
+        "title": "Maine Coast Shelter",
+        "image": "../images/Maine.JPEG",
+        "year": 2022,
+        "description": "Photo from midcoast Maine"
     },
     {
         "title": "Minus deleniti aliquid quia!",

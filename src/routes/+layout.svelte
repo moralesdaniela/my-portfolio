@@ -6,8 +6,23 @@ let pages = [
   { url: "./contact", title: "Contact" },
 ];
 import { page } from '$app/stores';
+let localStorage = globalThis.localStorage ?? {};
+
+let colorScheme = localStorage.colorScheme ?? "light dark";
+let root = globalThis?.document?.documentElement;
+$: root?.style.setProperty("color-scheme", colorScheme);
+$: localStorage.colorScheme = colorScheme;
+
 </script>
 
+<label class="color-scheme">
+		Theme:
+		<select name='themes' id='theme select' bind:value={ colorScheme }> 
+			<option>Automatic</option>
+            <option>Light</option>
+            <option>Dark</option> 
+		</select>
+	</label>
 <nav>
 	{#each pages as p }
     <a href={p.url} class:current={ "." + $page.route.id === p.url } target={ p.url.startsWith("http") ? "_blank" : null }>{p.title}</a>

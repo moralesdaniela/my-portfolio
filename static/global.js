@@ -14,18 +14,18 @@ function $$(selector, context = document) {
 // ];
 // let nav = document.createElement("nav");
 // document.body.prepend(nav);
-document.body.insertAdjacentHTML(
-  "afterbegin",
-  `
-	<label class="color-scheme">
-		Theme:
-		<select name='themes' id='theme select'> 
-			<option>Automatic</option>
-            <option>Light</option>
-            <option>Dark</option> 
-		</select>
-	</label>`
-);
+// document.body.insertAdjacentHTML(
+//   "afterbegin",
+//   `
+// 	<label class="color-scheme">
+// 		Theme:
+// 		<select name='themes' id='theme select'> 
+// 			<option>Automatic</option>
+//             <option>Light</option>
+//             <option>Dark</option> 
+// 		</select>
+// 	</label>`
+// );
 
 // for (let p of pages) {
 //   let url = p.url;
@@ -46,19 +46,19 @@ document.body.insertAdjacentHTML(
 //   );
 // }
 
-console.log("are we home?", ARE_WE_HOME);
+// console.log("are we home?", ARE_WE_HOME);
 
-let select = document.querySelector("select");
-// if color scheme in localstorage, set selector option to match
-if ("colorScheme" in localStorage) {
-  // set selector option
-  select.value = localStorage.colorScheme;
-  // set css color scheme rule
-  document.documentElement.style.setProperty(
-    "color-scheme",
-    localStorage.colorScheme
-  );
-}
+// let select = document.querySelector("select");
+// // if color scheme in localstorage, set selector option to match
+// if ("colorScheme" in localStorage) {
+//   // set selector option
+//   select.value = localStorage.colorScheme;
+//   // set css color scheme rule
+//   document.documentElement.style.setProperty(
+//     "color-scheme",
+//     localStorage.colorScheme
+//   );
+// }
 // this fires when you pick a color option
 select.addEventListener("input", function (event) {
   console.log("color scheme changed to", event.target.value);
