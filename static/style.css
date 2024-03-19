@@ -72,7 +72,10 @@ article {
   grid-row: span 3;
 
   display: grid;
-  grid-template-rows: subgrid;
+}
+
+.date {
+  color: var(--color-accent);
 }
 
 h1 {
