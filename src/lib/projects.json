@@ -19,13 +19,13 @@
     },
     {
         "title": "Osaka Streetscape",
-        "image": "../images/Osaka.jpg",
+        "image": "images/Osaka.jpg",
         "year": "2024",
         "description": "Photo from Osaka"
     },
     {
         "title": "Maine Coast Shelter",
-        "image": "../images/Maine.JPEG",
+        "image": "images/Maine.JPEG",
         "year": "2022",
         "description": "Photo from midcoast Maine"
     },
