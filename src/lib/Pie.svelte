@@ -2,24 +2,33 @@
 import * as d3 from 'd3';
 let arcGenerator = d3.arc().innerRadius(0).outerRadius(50);
 export let data = [];
+export let selectedIndex = -1;
 let sliceGenerator = d3.pie().value(d => d.value);
-let arcData = sliceGenerator(data);
-let arcs = arcData.map(d => arcGenerator(d));
+let arcData;
+let arcs;
+
+
+$: {
+    arcData = sliceGenerator(data);
+    arcs = arcData.map(d => arcGenerator(d));
+}
 let colors = d3.scaleOrdinal(d3.schemeTableau10);
 
-</script>
 
+
+</script>
 <div class="container">
+
 <svg viewBox="-50 -50 100 100">
-	{#each arcs as arc,i}
-    <path d={ arc } fill={ colors(i) } />
+	{#each arcs as arc,index}
+    <path d={ arc } fill={ colors(index) } class:selected={selectedIndex === index} on:click={e => selectedIndex = selectedIndex === index ? -1 : index }/>
 {/each}
 </svg>
 
 <ul class="legend">
 	{#each data as d, index}
 		<li style="--color: { colors(index) }">
-			<span class="swatch"></span>
+			<span class="swatch" class:selected={selectedIndex === index}></span>
 			{d.label} <em>({d.value})</em>
 		</li>
 	{/each}
@@ -64,4 +73,24 @@ svg {
 	/* Do not clip shapes outside the viewBox */
 	overflow: visible;
 }
+
+path {
+	transition: 300ms;
+}
+
+svg:has(path:hover) {
+	path:not(:hover) {
+		opacity: 50%;
+	}
+}
+
+.selected {
+	--color: oklch(60% 45% 0) !important;
+
+	&:is(path) {
+		fill: var(--color);
+	}
+}
+
+
 </style>

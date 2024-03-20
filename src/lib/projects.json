@@ -2,73 +2,73 @@
     {
         "title": "Project A2",
         "image": "https://moralesdaniela.github.io/A2_DM/images/figure7.png",
-        "year": 2024, 
+        "year": "2024", 
         "description": "This is an image from the the A2 Project for the course, Interactive Data Visualization"
     },
     {
         "title": "Project A3",
         "image": "https://moralesdaniela.github.io/A3_DM/images/A3_Part2Final.png",
-        "year": 2024, 
+        "year": "2024", 
         "description": "This is an image from the the A3 Project for the course, Interactive Data Visualization"
         },
     {
         "title": "Project A4",
         "image": "https://moralesdaniela.github.io/A4_DM/images/ForProp.png",
-        "year": 2024,
+        "year": "2024",
         "description": "This is an image from the A4 Project for the course, Interactive Data Visualization"
     },
     {
         "title": "Osaka Streetscape",
         "image": "../images/Osaka.jpg",
-        "year": 2024,
+        "year": "2024",
         "description": "Photo from Osaka"
     },
     {
         "title": "Maine Coast Shelter",
         "image": "../images/Maine.JPEG",
-        "year": 2022,
+        "year": "2022",
         "description": "Photo from midcoast Maine"
     },
     {
         "title": "Minus deleniti aliquid quia!",
         "image": "https://vis-society.github.io/labs/2/images/empty.svg",
-        "year": 2021,
+        "year": "2021",
         "description": "Voluptates odit voluptatem corporis soluta molestiae quasi corrupti excepturi eveniet quas ea earum\n                commodi ipsum porro, a laborum reiciendis temporibus quis voluptatibus modi veniam in impedit cum\n                libero. Illum, deserunt."
     },
     {
         "title": "Modi quia ab soluta.",
         "image": "https://vis-society.github.io/labs/2/images/empty.svg",
-        "year": 2021,
+        "year": "2021",
         "description": "Facere ea optio provident vel minima beatae natus repellendus. Quos veritatis sapiente at soluta nobis\n                quidem quia debitis minima, laudantium sit deserunt, beatae culpa hic quisquam ipsum obcaecati quas\n                cumque?"
     },
     {
         "title": "Odio mollitia cum architecto.",
         "image": "https://vis-society.github.io/labs/2/images/empty.svg",
-        "year": 2021,
+        "year": "2021",
         "description": "Quas corporis porro dicta odio autem at, quo saepe deserunt. Totam tenetur laudantium quas ratione quae\n                id necessitatibus rerum quisquam saepe voluptatibus molestiae, nam molestias veritatis ea, commodi\n                praesentium rem."
     },
     {
         "title": "Atque quam quidem inventore!",
         "image": "https://vis-society.github.io/labs/2/images/empty.svg",
-        "year": 2021,
+        "year": "2021",
         "description": "Eveniet minima recusandae dignissimos suscipit repellat laudantium, sit quos quia temporibus quae, quis\n                reprehenderit. Unde quod animi voluptate obcaecati, quia illo eum inventore laudantium, sed nihil\n                repudiandae dolorum amet. Perferendis!"
     },
     {
         "title": "Nesciunt perspiciatis molestiae ipsa!",
         "image": "https://vis-society.github.io/labs/2/images/empty.svg",
-        "year": 2021,
+        "year": "2021",
         "description": "Magni nostrum esse tempora, voluptatum ab vitae consequuntur natus eaque laborum nihil ut maxime expedita\n                deleniti ad explicabo sed perferendis pariatur delectus quo? Deleniti modi minima illum praesentium\n                repellat corrupti!"
     },
     {
         "title": "Iusto, deserunt nemo. Nobis.",
         "image": "https://vis-society.github.io/labs/2/images/empty.svg",
-        "year": 2021,
+        "year": "2021",
         "description": "Libero dolore iusto minima quas laborum eveniet sit quia quisquam quidem voluptatum saepe dicta, ullam\n                consequatur perspiciatis aperiam deleniti ea eius. Quis, doloremque harum cumque error laudantium hic\n                itaque voluptates?"
     },
     {
         "title": "Architecto minus autem incidunt.",
         "image": "https://vis-society.github.io/labs/2/images/empty.svg",
-        "year": 2021,
+        "year": "2021",
         "description": "Iusto labore officia sunt molestias ipsa, porro, deleniti quaerat tempora quo ullam eveniet a earum\n                facere facilis molestiae dolorum fugiat quidem quod eius nostrum ipsum dolorem praesentium cumque quam.\n                Eos?"
     }
 ]
