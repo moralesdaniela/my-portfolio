@@ -32,7 +32,7 @@ $: {
 	    return { value: count, label: year };
     });
     selectedYear = selectedYearIndex > -1 ? pieData[selectedYearIndex].label : null;
-    filteredByYear = projects.filter((project) => {
+    filteredByYear = filteredProjects.filter((project) => {
         return selectedYear ? project.year === selectedYear : true;
     });
 }
@@ -53,7 +53,7 @@ $: {
 <h1> { filteredByYear.length } Projects </h1>
 
      <div class="projects">
-        {#each filteredProjects as p}
+        {#each filteredByYear as p}
         <Project info ={p}/>
 {/each}
 </div>
