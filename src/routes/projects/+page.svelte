@@ -53,7 +53,7 @@ $: {
 <h1> { filteredByYear.length } Projects </h1>
 
      <div class="projects">
-        {#each filteredByYear as p}
+        {#each filteredProjects as p}
         <Project info ={p}/>
 {/each}
 </div>
