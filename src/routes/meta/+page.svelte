@@ -95,7 +95,7 @@
     function brushed (evt) {
         brushSelection = evt.selection
     }
-    
+
     function isCommitSelected(commit) {
         if (!brushSelection) {
             return false;
@@ -276,13 +276,14 @@
         padding: 1em;
     }
     circle {
+        transform-origin: center;
+            transform-box: fill-box;
         transition: 200ms;
         fill-opacity: 0.3;
         fill: steelblue;
         &:hover {
             transform: scale(2.5);
-            transform-origin: center;
-            transform-box: fill-box;
+           
         }
     }
     .circle-selected {
