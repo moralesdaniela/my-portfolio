@@ -3,6 +3,7 @@ let pages = [
 	{url: "./", title: "Home"},
 	{url: "./projects", title: "Projects"},
 	{ url: "./cv", title: "CV" },
+  {url: "./meta", title: "Meta"},
   { url: "./contact", title: "Contact" },
 ];
 import { page } from '$app/stores';

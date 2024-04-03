@@ -9,7 +9,12 @@ let arcs;
 
 
 $: {
-    arcData = sliceGenerator(data);
+
+	let arcData; {
+        console.log("PASSED DATA", data)
+        arcData = sliceGenerator(data);
+        console.log("ARC DATA", arcData)
+    }
     arcs = arcData.map(d => arcGenerator(d));
 }
 let colors = d3.scaleOrdinal(d3.schemeTableau10);
