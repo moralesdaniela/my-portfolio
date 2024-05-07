@@ -57,8 +57,8 @@
             let {author, date, time, timezone, datetime} = first;
             let ret = {
                 id: commit,
-                url: "https://github.com/moralesdaniela/my-portfolio/commit/" + commit,
-                author, date, time, timezone, datetime,
+                url: "https://github.com/moralesdaniela/my-portfolio/commit/" + 
+                commit, author, date, time, timezone, datetime,
                 hourFrac: datetime.getHours() + datetime.getMinutes() / 60,
                 totalLines: lines.length
             };
@@ -133,38 +133,6 @@
     <dd>{maxPeriod}</dd>
 </dl>
 
-<!-- <div class="slider-container">
-    <label for="time-slider">Choose a time:</label>
-    <input
-            type="range"
-            id="time-slider"
-            class="slider"
-            min="0"
-            max="100"
-    bind:value={commitProgress}
-    />
-    <time class="time-display" datetime={commitMaxTime.toLocaleString()}>
-        {commitMaxTime.toLocaleString()}
-    </time>
-</div> -->
-
-<!-- <h3 style="font-weight: bold;"> Codebase evolution </h3>
-    <FileLines lines={filteredLines} colors={colors}/> -->
-
-<!-- <h3>TEST</h3>
-<h3>TEST</h3>
-<h3>TEST</h3>
-<h3>TEST</h3>
-<h3>TEST</h3>
-<h3>TEST</h3>
-<h3>TEST</h3>
-<h3>TEST</h3>
-<h3>TEST</h3>
-<h3>TEST</h3>
-<h3>TEST</h3>
-<h3>TEST</h3>
-<h3>TEST</h3> -->
-
 
 <Scrolly bind:progress={ commitProgress }>
     The story behind my commits
@@ -209,13 +177,7 @@
 
 <div>
     <h3 style="font-weight: bold;">Language Breakdown</h3>
-    <!--
-    <Stats
-      data={(languageBreakdown ?? []).map(([language, lines]) => ({
-        title: language,
-        value: Math.round((lines / selectedLines.length) * 100) / 100,
-      }))}
-    /> -->
+    
     <dl class="breakdown">
         {#each languageBreakdown as [language, lines]}
             <div>
