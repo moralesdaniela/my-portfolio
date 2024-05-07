@@ -1,8 +1,15 @@
 <script>
 	import * as d3 from 'd3';
 
+
+
+
 	export let data = [];
 	let pieData;
+
+
+
+
 
 	let arcData;
 	let arcs;
@@ -10,6 +17,9 @@
 	let wedges = {};
 	let oldData = [];
 	export let transitionDuration = 3000; // in ms
+
+
+
 
 
 	function transitionArcs() {
@@ -25,6 +35,10 @@
 			});
 	}
 
+
+
+
+
 	function sameArc(d, d_old) {
   		// Check for falsy values (null, undefined)
   		if (!d && !d_old) return true;
@@ -32,6 +46,10 @@
   		// If both are defined, check if startAngle and endAngle are the same
   		return d && d_old && d.startAngle === d_old.startAngle && d.endAngle === d_old.endAngle;
 	}
+
+
+
+
 
 	function transitionArc (wedge, label) {
 		label ??= Object.entries(wedges).find(([label, w]) => w === wedge)[0];
@@ -74,6 +92,12 @@
 	}
 
 	let sliceGenerator = d3.pie().value(d => d.value).sort(null);
+
+
+
+
+
+
 
 	$: {
 		// pieData = data.map(d => ({...d}));
@@ -133,7 +157,11 @@
 
 	// let arcs = arcData.map(d => arcGenerator(d));
 
+
 </script>
+
+
+
 
 <div class="container">
 	<svg viewBox="-50 -50 100 100">
@@ -151,6 +179,10 @@
 				transition:arc/>
 		{/each}
 	</svg>
+
+
+
+
 
 	<ul class="legend">
 		{#each pieData as d, index}
@@ -180,6 +212,9 @@
 
 
 
+
+
+
     svg {
 		min-width: 300px;
 		max-width: 20em;
@@ -188,6 +223,8 @@
 		/* Do not clip shapes outside the viewBox */
 		overflow: visible;
 	}
+
+
 
 
 	.legend li {
@@ -234,6 +271,11 @@
 	}
 	}
 
+
+
+
+
+
 	.selected {
 		--color: oklch(44.93% 0.143 136) !important;
 		transition: 300ms;
@@ -244,3 +286,5 @@
 	}
 	}
 </style>
+
+
